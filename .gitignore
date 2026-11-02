@@ -1,0 +1,7 @@
+node_modules
+dist/
+.workbase/
+test-results/
+playwright-report/
+*.log
+.env

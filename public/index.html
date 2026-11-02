@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Berichtsassistent · Elbservice</title>
+  <link rel="icon" href="/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/" aria-label="Elbservice Berichtsassistent – Übersicht">
+      <img src="/logo.svg" alt="" width="32" height="32">
+      <span class="brand-text"><span class="wordmark">Elbservice</span><span class="product">Berichtsassistent</span></span>
+    </a>
+    <span class="topbar-note">Serviceberichte · Zusammenfassung per Modellfunktion</span>
+    <span class="topbar-user" title="Angemeldet als Technikbüro"><span class="avatar">TB</span><span class="user-name">Technikbüro Hamburg</span></span>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="Serviceberichte">
+      <div class="sidebar-head">
+        <h1>Serviceberichte</h1>
+        <p class="sidebar-sub" id="report-count">Wird geladen …</p>
+        <label class="search">
+          <span class="visually-hidden">Berichte durchsuchen</span>
+          <svg aria-hidden="true" viewBox="0 0 20 20" width="16" height="16"><circle cx="9" cy="9" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13.2 13.2L17 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <input type="search" id="search" placeholder="Kunde, Anlage, Techniker …" autocomplete="off">
+        </label>
+      </div>
+      <ul class="report-list" id="report-list" aria-busy="true"></ul>
+    </aside>
+
+    <main class="detail" id="detail" aria-live="polite"></main>
+  </div>
+
+  <footer class="footer">
+    <span>Elbservice Technischer Gebäudeservice · internes Werkzeug</span>
+    <span class="footer-meta" id="footer-meta"></span>
+  </footer>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

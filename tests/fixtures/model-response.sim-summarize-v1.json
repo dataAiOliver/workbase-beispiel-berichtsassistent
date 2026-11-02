@@ -1,0 +1,13 @@
+{
+  "model_id": "sim-summarize-v1",
+  "fixture_id": "fx-kaelte-hochdruck-01",
+  "output": {
+    "summary": "Hochdruckstörung an der Kälteanlage Kühlraum 2 durch verschmutzten Verflüssiger; nach Reinigung läuft die Anlage stabil, Lüftermotor sollte zeitnah getauscht werden.",
+    "key_points": [
+      "Verflüssiger stark verschmutzt, gereinigt",
+      "Hochdruck nach Reinigung im Sollbereich (17,8 bar)",
+      "Lüftermotor 2 mit Lagergeräusch – Austausch anbieten"
+    ],
+    "urgency": "mittel"
+  }
+}
